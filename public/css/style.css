@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/public/font/static/Montserrat-Regular.ttf);
+  }
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, transparent, #b7b7b7);
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.content {
+    width: 80vw;
+    min-height: 50vh;
+    border: 0.1em solid #e1e0e0;
+    box-shadow: 5px 5px 10px #e5e5e5a6;
+}
+
+.todo-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 20px;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-form {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+input {
+    width: 70%;
+    margin-right: 20px;
+    height: 30px;
+    border: 0.1em white;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border: 0.1em solid #cfcfcf;
+    cursor: pointer;
+}
+
+.todo-list {
+    padding: 10px;
+    width: 80%;
+    min-height: 70%;
+    border: 0.1em solid #e1e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.todo-list li {
+    width: 90%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.todo-list li a{
+    height: 90%;
+}
+
+.todo-list li:nth-child(odd) {
+    background-color: #f9f9f945;
+}
+
+.todo-name {
+    width: 70%;
+}
+
+.btn-validate, .btn-delete {
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    height: inherit;
+}
+
+.btn-validate:hover, .btn-delete:hover{
+    cursor: pointer;
+} 
+
+.btn-validate {
+    background-color: #78ad78;
+}
+
+.btn-delete {
+    background-color: #e56363;
+}
+
+.todo-done {
+    opacity: 0.5;
+}
+
+footer p {
+    font-size: 0.7rem;
+    font-style: italic;
+}
